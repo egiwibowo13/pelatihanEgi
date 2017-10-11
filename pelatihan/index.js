@@ -25,6 +25,14 @@ app.use('/api',penilaianTeknisRoute);
 
 let penilaianAkhirRoute = require('./penilaianAkhir/penilaianAkhirRoute.js');
 app.use('/api',penilaianAkhirRoute);
+let penggunaRoute=require('./pengguna/penggunaRoute.js');
+app.use('/api',penggunaRoute);
+let aksespenggunaRoute=require('./aksespengguna/AksespenggunaRoute.js');
+app.use('/api',aksespenggunaRoute);
+let pendaftaranRinciRoute=require('./pendaftaranrinci/pendaftaranRinciRoute.js');
+app.use('/api',pendaftaranRinciRoute);
+let pendaftaranAplikasiRoute=require('./pendaftaranaplikasi/pendaftaranAplikasiRoute.js');
+app.use('/api',pendaftaranAplikasiRoute);
 
 // let pembayaranRoute = require('./pembayaran/pembayaranRoute.js');
 // app.use('/api',pembayaranRoute);
